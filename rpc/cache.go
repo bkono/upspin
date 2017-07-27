@@ -22,7 +22,7 @@ func CacheEndpoint(cfg upspin.Config) (*upspin.Endpoint, error) {
 	switch v {
 	case "y", "yes", "true":
 		name := local.LocalName(cfg, "cacheserver")
-		ep, err := upspin.ParseEndpoint(name)
+		ep, err := upspin.ParseEndpoint("remote," + name + ":443")
 		if err != nil {
 			return nil, errors.E(op, errors.Internal, err)
 		}

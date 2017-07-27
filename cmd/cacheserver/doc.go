@@ -20,7 +20,6 @@ It takes a single value that can be:
 
 	- 'yes' (or 'y') to use a default endpoint for the cacheserver
 	- 'no' (or 'n') to specify no cacheserver (the default)
-	- a local TCP port (e.g. localhost:9999) to specify a particular port
 
 The cacheserver will be started automatically by the upspin command or upspinfs if it is
 not already running, and continues to run once the program that started it
